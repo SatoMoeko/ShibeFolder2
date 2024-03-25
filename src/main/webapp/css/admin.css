@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+body{
+
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+  color:#444;
+
+
+}
+
+
+#header {
+
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+ 
+#header>h1 {
+  margin-right: auto;
+  margin-left: 100px;
+  color:palevioletred;
+  font-size:2rem;
+  font-family: 'Sacramento', cursive;
+
+}
+ 
+#header>li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  font-family: "M+ Type-1 (general-j) Regular" ;
+
+}
+
+.container{
+padding-top:20px;
+padding-bottom:60px;
+margin-top: 100px;
+}
+
+td>img,.sampleImg{
+width:200px;
+}
+
+input.form-control,
+.alert{
+	width:500px;
+}
+
+table.table{
+	width:70%;
+}
+
+#footer {
+  width: 100%;
+  height: 5px; 
+  text-align: center;
+  padding: 50px 0;
+  background-color: white;
+}
+
+#footer>p {
+	font-size:10px;
+  color: palevioletred;
+}
