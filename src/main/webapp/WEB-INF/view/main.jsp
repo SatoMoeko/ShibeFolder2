@@ -14,7 +14,7 @@
 </head>
 <body>
    <header id="header">
-    <h1>Favorite Shibes</h1>
+    <h1><a href="Main">Favorite Shibes</a></h1>
      <nav class="nav">
       <ul class="menu-group">
         <li class="menu-item"><a href="Main">おきにいり</a></li>
