@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
+* {
+   box-sizing: border-box;
+}
+
+
 body{
 
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
@@ -9,40 +14,73 @@ body{
 
 }
 
+a {	
+   text-decoration: none; 
+   color: dimgray;
+   }
+
 
 #header {
-
-  display: flex;
+  padding: 30px 4% 10px;
   width: 100%;
   height: 100px;
   background-color: white;
+  display: flex; 
   align-items: center;
   position: fixed;
   top: 0;
   z-index: 999;
+
 }
  
 #header>h1 {
-  margin-right: auto;
-  margin-left: 100px;
-  color:palevioletred;
+ margin: 0; 
+ padding: 0;
   font-size:2rem;
   font-family: 'Sacramento', cursive;
 
 }
  
-#header>li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-  font-family: "M+ Type-1 (general-j) Regular" ;
+.maintitle{
+	color:palevioletred;
+}
 
+.menu-group {
+	list-style: none;
+	margin: 0;
+	display: flex;
+}
+ 
+.menu-item {
+	 margin: 0 0 0 15px;
+   font-size: 14px;
+}
+
+.nav{
+	margin: 0 0 0 auto;
+}
+
+#wrapper{
+
+  background:ghostwhite;
+ 
 }
 
 .container{
 padding-top:20px;
 padding-bottom:60px;
 margin-top: 100px;
+}
+
+.subtitle{
+	color: dimgray;
+	margin: 0;
+	
+}
+
+#wrapper{
+background:ghostwhite;	
+
 }
 
 td>img,.sampleImg{

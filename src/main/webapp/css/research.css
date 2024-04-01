@@ -66,31 +66,12 @@ a {
   margin-top: 100px;
 }
 
-#menu{
-  width:80%;
-  margin:auto;
-  display:grid;
-  gap:26px;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+#image {
+    height: 300px;
 }
-#menu>div{
-  background:#ffffff;
-  box-shadow: 2px 2px 2px 2px #efefef;
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-}
-#menu>div>p{
-  padding:1vh 2vh;
-  text-align: left;
-}
-#menu>div>p:last-child{
-  text-align: left;
-}
-#menu>div>img{
-  width:100%;
-  
+
+#toggle{
+	display:none;
 }
 
 #footer {

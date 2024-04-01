@@ -11,49 +11,55 @@
 </head>
 <body>
 <header id="header">
-    <h1>Favorite Shibes</h1>
+    <h1><a href="/ShibeFolder2/Main" class="maintitle">Favorite Shibes</a></h1>
      <nav class="nav">
       <ul class="menu-group">
         <li class="menu-item"><a href="/ShibeFolder2/Main">おきにいり</a></li>
-        <li class="menu-item"><a href="#">さがす</a></li>
+        <li class="menu-item"><a href="/ShibeFolder2/MainResearch">さがす</a></li>
          <li class="menu-item"><a href="/ShibeFolder2/Admin">登録する</a></li>
       </ul>
     </nav>
-  </header>
-<div class="container">
-<form action="/ShibeFolder2/Admin/Update" method="post" enctype="multipart/form-data">
-<label for="title">title</label>
-<input type="text" name="title" id="title" class="form-control" value="${shibe.title}" required>
+</header>
+<div id="wrapper">
+		<div class="container">
+			<h2 class="subtitle">いぬ情報編集ページ</h2>
+			<form action="/ShibeFolder2/Admin/Update" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="title">title</label>
+					<input type="text" name="title" id="title" class="form-control" value="${shibe.title}" required>
+				</div>
+				<div class="form-group">
+					<label for ="memo">memo</label>
+					<input type="text" name="memo" id="memo" class="form-control" value="${shibe.memo}" required>
+				</div>
+					<img class="sampleImg" src="/ShibeFolder2/upload/${shibe.imgname}"><br>
+				<div class="form-group">
+					<label for="imgname">shibe image</label>
+					<input type="file" name="imgname" class="form-control" id="imgname">
+				</div>
+					<input type="hidden" name="id" value="${shibe.id}">
+					<input type="hidden" name="orgname" value="${shibe.imgname}">
+				<div class="form-group">
+					<button type="submit" class="byn btn-primary">更新</button>
+			</form>
+					<script>
+					window.onload=()=>{
+						const inputFile=document.getElementById("imgname");
+						const previewImg=document.getElementById("preview");
+						const reader=new FileReader();
+						reader.addEventListener("load",()=>{
+							previewImg.src=reader.result;
+						});
+						inputFile.addEventListener("change",()=>{
+							reader.readAsDataURL(inputFile.files[0]);
+						});
+					};
+					</script>
+				</div>
+		</div>
 </div>
-<div class="form-group">
-<label for ="memo">memo</label>
-<input type="text" name="memo" id="memo" class="form-control" value="${shibe.memo}" required>
-</div>
-<img class="sampleImg" src="/ShibeFolder2/upload/${shibe.imgname}"><br>
-<div class="form-group">
-<label for="imgname">shibe image</label>
-<input type="file" name="imgname" class="form-control" id="imgname">
-</div>
-<input type="hidden" name="id" value="${shibe.id}">
-<input type="hidden" name="orgname" value="${shibe.imgname}">
-<div class="form-group">
-<button type="submit" class="byn btn-primary">更新</button>
-</form>
-<script>
-window.onload=()=>{
-	const inputFile=document.getElementById("imgname");
-	const previewImg=document.getElementById("preview");
-	const reader=new FileReader();
-	reader.addEventListener("load",()=>{
-		previewImg.src=reader.result;
-	});
-	inputFile.addEventListener("change",()=>{
-		reader.readAsDataURL(inputFile.files[0]);
-	});
-};
-</script>
 <footer id="footer">
   	<p>© All rights reserved by moecosato.</p>
-  </footer>
+</footer>
 </body>
 </html>

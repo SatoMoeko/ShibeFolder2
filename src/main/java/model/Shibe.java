@@ -33,7 +33,7 @@ public class Shibe implements Serializable{
 	public String getTitle() {
 		return title;
 	}
-	public void setColor(String title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 	public String getImgname() {
