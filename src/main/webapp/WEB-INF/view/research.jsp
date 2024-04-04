@@ -21,17 +21,20 @@
         <li class="menu-item"><a href="/ShibeFolder2/Main">おきにいり</a></li>
         <li class="menu-item"><a href="MainResearch">さがす</a></li>
          <li class="menu-item"><a href="/ShibeFolder2/Admin">登録する</a></li>
+         <li class="menu-item"><a href="/ShibeFolder2/Quiz">クイズ</a></li>
       </ul>
     </nav>
   </header>
   <div id="wrapper">
+  <div class="container">
 	  <h2 class="subtitle">いぬをさがす</h2>
-  		<button id="click">shibe join!</button>
+	  <p>ボタンを押すと柴犬の画像をランダム表示します。</p>
+  		<button id="click" class="button">shibe join!</button>
   	<!-- APIから取得した犬種と画像を表示する -->
   		<div><img id="image"></div>
   		
   	<!-- 追加をおすとフォームがでてくる -->
-  	<button id="btn">おきにいりに追加</button>
+  	<button id="btn" class="button">おきにいりに追加</button>
   	<div id="toggle">
   		<c:if test="${not empty msg }">
 			<div class="alert alert-success" role="alert">
@@ -54,8 +57,8 @@
 			<button type="submit" class="btn btn-primary">登録する</button>
 		</form>
 	</div>
-	
-  </div>
+</div>	
+</div>
   <footer id="footer">
   	<p>© All rights reserved by moecosato.</p>
   </footer>

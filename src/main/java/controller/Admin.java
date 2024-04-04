@@ -48,6 +48,13 @@ public class Admin extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
+		
+//		Date date = new Date();//実行日時の情報を持つdateインスタンスを作成
+//		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");//クエリパラメータにあわせたフォーマットを作成
+//		String td =sdf.format(date);//フォーマットされた文字列を得る
+//		
+//		String today=request.getParameter("today");
+		
 		String title=request.getParameter("title");
 		Part part=request.getPart("imgname");
 		String imgname=part.getSubmittedFileName();

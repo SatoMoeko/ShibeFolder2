@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class Shibe implements Serializable{
 	private int id;
+//	private String today;
 	private String title;
 	private String imgname;
 	private String memo;
@@ -12,6 +13,7 @@ public class Shibe implements Serializable{
 	public Shibe(int id, String title, String imgname, String memo) {
 		super();
 		this.id = id;
+//		this.today=today;
 		this.title = title;
 		this.imgname = imgname;
 		this.memo = memo;
@@ -19,6 +21,7 @@ public class Shibe implements Serializable{
 	
 	public Shibe(String title, String imgname, String memo) {
 		super();
+//		this.today= today;
 		this.title = title;
 		this.imgname = imgname;
 		this.memo = memo;
@@ -48,6 +51,12 @@ public class Shibe implements Serializable{
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
-	
+////	public String getToday() {
+////		return today;
+////	}
+////	public void setToday(String today) {
+////		this.today = today;
+//	}
+//	
 	
 }

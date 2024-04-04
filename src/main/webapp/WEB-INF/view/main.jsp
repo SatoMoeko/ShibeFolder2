@@ -23,6 +23,7 @@
         <li class="menu-item"><a href="Main">おきにいり</a></li>
         <li class="menu-item"><a href="MainResearch">さがす</a></li>
          <li class="menu-item"><a href="Admin">登録する</a></li>
+         <li class="menu-item"><a href="Quiz">クイズ</a></li>
       </ul>
     </nav>
   </header>

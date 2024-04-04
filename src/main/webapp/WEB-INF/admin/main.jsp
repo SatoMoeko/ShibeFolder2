@@ -23,6 +23,7 @@
         <li class="menu-item"><a href="/ShibeFolder2/Main">おきにいり</a></li>
         <li class="menu-item"><a href="/ShibeFolder2/MainResearch">さがす</a></li>
         <li class="menu-item"><a href="/ShibeFolder2/Admin">登録する</a></li>
+        <li class="menu-item"><a href="/ShibeFolder2/Quiz">クイズ</a></li>
       </ul>
     </nav>
   </header>
