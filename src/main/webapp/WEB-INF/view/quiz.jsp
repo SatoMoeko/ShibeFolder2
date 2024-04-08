@@ -15,7 +15,7 @@
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 				integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 				crossorigin="anonymous">
-			<link rel="stylesheet" href="css/main.css" />
+			<link rel="stylesheet" href="css/quiz.css" />
 		</head>
 
 		<body>
@@ -32,20 +32,18 @@
 			</header>
 			<div id="wrapper">
 				<h2 class="subtitle">いぬクイズ</h2>
-				 <div id="container">
-        			<p id="ja"></p>
-        			<input type="text" id="entry">
-        			<img id="img">
-        			<button class="button">答える</button>
-        			<p id="result"></p>
-    			</div>
+					<div id="container">
+						<p id="ja">quiz</p>
+						<img id="img" src="images/shibe01.jpg">
+						<input type="text" id="entry">
+						<button id="btn">回答する</button>
+						<p id="result">answer</p>
+					</div>
 			</div>
 			<footer id="footer">
 				<p>© All rights reserved by moecosato.</p>
 			</footer>
-			<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-				integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-			<script src="js/main.js"></script>
+				<script src="js/quiz.js"></script>
 		</body>
 
 		</html>

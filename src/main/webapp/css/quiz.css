@@ -75,11 +75,12 @@ a {
 
 #ja,
 #entry {
-    font-size: 30px;
+    font-size: 20px;
+    margin: 0.5rem;
 }
 
 
-.button{
+#btn{
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
@@ -97,7 +98,7 @@ a {
 	color: #27acd9;
 }
 
-.button:hover {
+#btn:hover {
 	border: 4px solid #27acd9;
 	color: #27acd9;
 }
@@ -106,16 +107,17 @@ a {
 
 
 #img {
-    width: 300px;
+    
     height: 300px;
     margin: 20px;
 }
 
 #result {
+	margin: 1rem;
     transition: 0.5s;
     opacity: 1;
-    font-size: 35px;
-    color: red;
+    font-size: 20px;
+    color: palevioletred;
 }
 
 #result.fade {

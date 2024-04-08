@@ -34,7 +34,7 @@
   		<div><img id="image"></div>
   		
   	<!-- 追加をおすとフォームがでてくる -->
-  	<button id="btn" class="button">おきにいりに追加</button>
+  	<button id="favbtn" class="button">おきにいりに追加</button>
   	<div id="toggle">
   		<c:if test="${not empty msg }">
 			<div class="alert alert-success" role="alert">
